@@ -7,6 +7,8 @@ import java.util.*;
 import static org.andestech.learning.rfb19.g4.utils.Utils.genRandomPasswordList;
 import static org.andestech.learning.rfb19.g4.utils.Utils.genRandomIntegerList;
 
+import static org.andestech.learning.rfb19.g4.utils.Utils.echo;
+
 public class AppColls
 {
 
@@ -25,7 +27,7 @@ public class AppColls
         list.addAll(2,Arrays.asList(new Integer[]{-22,33,44,123123}));
 
         System.out.println(list);
-
+        echo();
 
         //list.toString();
 
@@ -34,6 +36,12 @@ public class AppColls
         //
         System.out.println(genRandomIntegerList(10,-100,100));
         System.out.println(genRandomPasswordList(10, 12));
+
+        echo('+');
+
+        Collections.sort(list);
+        System.out.println(list);
+
 
 
 
